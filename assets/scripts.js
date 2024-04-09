@@ -10,7 +10,7 @@ $(document).ready(function(){
 
   console.log("fucker");
   const stars = document.querySelector('.stars');
-  const canvasSize = document.body.offsetWidth * document.body.offsetHeight;
+  const canvasSize = document.body.offsetWidth * (document.body.offsetHeight/2);
   const starsFraction = canvasSize / 2000;
 
   for(let i = 0; i < starsFraction; i++) {
@@ -18,7 +18,7 @@ $(document).ready(function(){
     let xPos = random(0, 100);
     let yPos = random(0, 100);
     let alpha = random(0.5, 1);
-    let size = random(0, 0.5);
+    let size = random(1, 2);
     let colour = '#ffffff';
       
     // Add them to the body
