@@ -2,6 +2,19 @@ function random(min, max) {
   return min + Math.random() * (max + 1 - min);
 }
 
+const jmk = ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7cDp1XJoMTDPov6SqIpFIs23hwGptMPL_h9HWUT12IQ&s',
+            'https://i.pinimg.com/236x/3c/3a/d2/3c3ad2371c25000d72a7b3b4b7157603.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCAJluHP6dkY4K1rsLk8WHHT8KiZWnjTgntur9HKpCg&s',
+            'https://i.pinimg.com/236x/54/89/94/548994c6b206c3e2d29a13d9737a9ce0.jpg',
+            'https://www.youtube.com/watch?v=WmmINrVg1_Y',
+            'https://www.youtube.com/watch?v=50f-zYortkU',
+            'https://i.pinimg.com/236x/58/47/0c/58470cbb4c0632fddb55931dfa991ba2.jpg',
+            'https://images.tokopedia.net/img/JFrBQq/2022/4/28/d2d51cc4-e097-427c-8e23-879d18cf6a56.jpg',
+            'https://www.youtube.com/shorts/JqEXXeZSzTg'
+          ]
+
+const generateMemeEvent = 'memeJMK'
+
 $(document).ready(function(){
 
   
@@ -54,6 +67,13 @@ $(document).ready(function(){
 
   const elementTarget = document.querySelectorAll('.animation');
   elementTarget.forEach((el)=> observer.observe(el));
+
+  const imageMeme = document.querySelector('.lamp');
+  imageMeme.addEventListener("click", function(){
+    const numberRandom = Math.floor(Math.random()*10)
+    alert("Selamat Anda menemukan EasterEGG :) lop u");
+    window.open(jmk[numberRandom]);
+  });
 
 });
 
