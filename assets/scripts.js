@@ -68,12 +68,19 @@ $(document).ready(function(){
   const elementTarget = document.querySelectorAll('.animation');
   elementTarget.forEach((el)=> observer.observe(el));
 
-  const imageMeme = document.querySelector('.lamp');
-  imageMeme.addEventListener("click", function(){
-    const numberRandom = Math.floor(Math.random()*10)
+ 
+
+  const imageMemeRight = document.querySelector('.right');
+  const imageMemeLeft = document.querySelector('.left');
+  imageMemeRight.addEventListener("click", function(){
+    const number= Math.floor(Math.random()*10);
+    alert("Selamat Anda menemukan EasterEGG :)");
+    window.open(jmk[number]);
+    number = 0;});
+  imageMemeLeft.addEventListener("click", function(){
+    const number= Math.floor(Math.random()*10);
     alert("Selamat Anda menemukan EasterEGG :) lop u");
-    window.open(jmk[numberRandom]);
-  });
+    window.open(jmk[number]);
+    number = 0;});
 
 });
-
