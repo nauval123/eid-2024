@@ -18,7 +18,7 @@ $(document).ready(function(){
     let xPos = random(0, 100);
     let yPos = random(0, 100);
     let alpha = random(0.5, 1);
-    let size = random(1, 2);
+    let size = random(0, 0.5);
     let colour = '#ffffff';
       
     // Add them to the body
