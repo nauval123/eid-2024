@@ -10,7 +10,7 @@ $(document).ready(function(){
 
   console.log("fucker");
   const stars = document.querySelector('.stars');
-  const canvasSize = document.body.offsetWidth * document.body.offsetHeight;
+  const canvasSize = document.body.offsetWidth * (document.body.offsetHeight/2);
   const starsFraction = canvasSize / 2000;
 
   for(let i = 0; i < starsFraction; i++) {
