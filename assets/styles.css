@@ -68,6 +68,12 @@ body{
     z-index: 1000;
 }
 
+.lamp:hover{
+    background-image: radial-gradient(rgba(228, 231, 12, 0.76),rgba(220, 221, 153, 0.76),rgba(255, 255, 255, 0.205)) ;
+    border-radius: 100%;
+    background-size: auto;
+}
+
 .sliding-background {
     top: 30vh;
     background-color: transparent;
